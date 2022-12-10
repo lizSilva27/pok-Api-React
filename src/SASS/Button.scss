@@ -1,0 +1,32 @@
+@use 'variables';
+
+.button {
+    background-color: variables.$background_Button;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: White;
+    font-size: 35px;
+
+    &__box {
+        // border: 1px solid greenyellow;
+        position: relative;
+    }
+
+    &__box-shadow {
+        width: 60px;
+        height: 60px;
+        background-color: variables.$box_Shadow_Card;
+        border-radius: 50%;
+        position: absolute;
+        top: 5px;
+        // Colocar en la parte trasera del botón
+        z-index: -1;
+    }
+
+    &:active {
+        transform: translateY(4px);
+    }
+}
