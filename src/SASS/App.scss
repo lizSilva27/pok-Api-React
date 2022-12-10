@@ -15,7 +15,7 @@
 .card-container {
     // border: 6px solid orange;
     display: flex;
-    width: 500px;
+    width: 635px;
     height: 300px;
     position: relative;
     align-items: center;
@@ -36,7 +36,7 @@
 
 .card-container .card:nth-child(2){
     position: absolute;
-    left: 150px;
+    left: 200px;
     z-index: 2;
 
     &:hover{
@@ -47,7 +47,7 @@
 
 .card-container .card:nth-child(3){
     position: absolute;
-    left: 300px;
+    left: 360px;
     z-index: 1;
     transition: 100ms;
     transform: rotate(5deg)  translateY(10px);
